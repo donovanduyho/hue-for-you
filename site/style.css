@@ -35,7 +35,9 @@ input[type="text"] {
 
 
 label{
-    text-align: right;
+    color: rgb(45, 57, 72);
+    /* text-align: center; */
+    text-align: center;
 }
 
 button{

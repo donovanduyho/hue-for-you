@@ -32,6 +32,7 @@ input[type="text"] {
     border: 1px solid silver;
     border-radius: 5px;
     text-align: center;
+    margin: auto;
 }
 
 

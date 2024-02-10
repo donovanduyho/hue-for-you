@@ -2,7 +2,7 @@ import openai
 from flask import Flask, request, jsonify
 
 # Configure your OpenAI API key
-openai.api_key = "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"
+openai.api_key = "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"
 
 app = Flask(__name__)
 
@@ -34,10 +34,9 @@ if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=4999)   # Enable debug mode during development
  
 # Main Interaction Loop
-#while True:
-#    user_word = input("Enter a word: ")
-#   if user_word.lower() == "quit":
-#        break
-#
-#    colors = get_color_palette(user_word)
-#    print(f"Suggested color palette for '{user_word}':\n{colors}")
+while True:
+    user_word = input("Enter a word: ")
+    if user_word.lower() == "quit":
+        break
+    colors = get_color_palette(user_word)
+    print(f"Suggested color palette for '{user_word}':\n{colors}")

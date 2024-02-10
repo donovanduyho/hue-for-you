@@ -2,7 +2,7 @@
 body {
     font-family: sans-serif;
     /* background-color: rgb(220, 234, 236); */
-    background-color: rgb(235, 230, 233);
+    background-color: rgb(247, 245, 246);
     margin-top: 50px;
     padding: 0%;
 }
@@ -10,7 +10,7 @@ body {
 
 h1, h2, p {
     /* color: rgb(45, 57, 72); */
-    color: rgb(66, 65, 66);
+    color: rgb(99, 98, 99);
     /* text-align: center; */
     text-align: center;
 }

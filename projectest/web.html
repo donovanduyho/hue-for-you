@@ -32,6 +32,17 @@
         <div id="colorPalette"></div>
         <div id="errorMessage"></div>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
         <script src="web.js"></script> 
+        <script>
+            var input = document.getElementById("wordInput");
+            var button = document.getElementById("generateButton");
+            input.addEventListener("keypress", function(event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    button.click();
+                }
+            });
+        </script>
+
     </div>
 
 </body>

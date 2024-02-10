@@ -21,7 +21,7 @@ h2 {
 
 p {
     color: rgb(45, 57, 72);
-    /* text-align: center; */
+    text-align: center;
     margin: 14px
 }
 
@@ -31,6 +31,7 @@ input[type="text"] {
     font-size: 17px;
     border: 1px solid silver;
     border-radius: 5px;
+    text-align: center;
 }
 
 

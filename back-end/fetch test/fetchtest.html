@@ -1,10 +1,10 @@
-<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask Test</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>Flask Test</h1>
@@ -14,7 +14,7 @@
     <script>
         async function fetchHello() {
             try {
-                const response = await fetch('/');
+                const response = await fetch('/hello');
                 const data = await response.text();
                 document.getElementById('output').innerText = data;
             } catch (error) {

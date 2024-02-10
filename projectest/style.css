@@ -4,3 +4,8 @@
     margin: 5px;
     display: inline-block; 
 }
+
+h1, h2, p{
+    text-align: center;
+
+}

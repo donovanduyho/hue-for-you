@@ -3,7 +3,11 @@ from flask_cors import CORS
 from flask import Flask, request, jsonify
 
 # Configure your OpenAI API key
+<<<<<<< Updated upstream
 openai.api_key = "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"
+=======
+openai.api_key = "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"
+>>>>>>> Stashed changes
 
 app = Flask(__name__)
 CORS(app)
@@ -36,5 +40,3 @@ def get_colors():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5005) 
-
-print(get_color_palette("dog"))

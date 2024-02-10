@@ -1,7 +1,16 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Color Palette Generator</title>
+<html lang = "en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial_scale=1.0">
+    <title>HueForYou</title>
+    <link rel= "stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hue For You </h1>
+    <h2> The best website to find colors that match your entries</h2>
+    <p>Please enter a word that you would like to generate into a color </p>
+    <label for="input">   </label>
     <style>
         .color-box {
             width: 60px;
@@ -16,12 +25,13 @@
     </style>
 </head>
 <body>
-    <input type="text" id="wordInput" placeholder="Enter a word">
-    <button id="generateButton">Generate Palette</button>
-    <div id="colorPalette"></div>
-    <div id="errorMessage"></div>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
-    <script src="web.js"></script> 
-
+    <div class ="center">
+        <input type="text" id="wordInput" placeholder="Type here ">
+        <button id="generateButton">Generate Palette</button>
+        <div id="colorPalette"></div>
+        <div id="errorMessage"></div>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+        <script src="web.js"></script> 
+    </div>
 
 </body>
 </html>

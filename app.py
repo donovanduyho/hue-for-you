@@ -3,7 +3,7 @@ from flask_cors import CORS
 from flask import Flask, request, jsonify
 
 # Configure your OpenAI API key
-openai.api_key = "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"
+openai.api_key = "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"
 
 app = Flask(__name__)
 CORS(app)
@@ -11,13 +11,14 @@ CORS(app)
 def get_color_palette(word):
     prompt = f"""Suggest a color palette of (ONLY) 4 hex color codes (ONLY THE CODES DO NOT GIVE ME THE NAME OF THE COLOR) that would best represent the word "{word}"."""
 
-    response = openai.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": prompt}]
+    response = openai.Completion.create(
+        engine="davinci",
+        prompt=prompt,
+        max_tokens=150
     )
 
-    color_description = response.choices[0].message.content
-    print("hello")
+    color_description = response.choices[0].text
+    
     hex_codes = []
     for line in color_description.splitlines():
         if line.startswith('#'):
@@ -35,6 +36,4 @@ def get_colors():
     return jsonify({'colors': colors})
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5005) 
-
-print(get_color_palette("dog"))
+    app.run(debug=True, host='0.0.0.0', port=5005)

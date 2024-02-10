@@ -4,3 +4,83 @@
     margin: 5px;
     display: inline-block; 
 }
+
+body {
+    font-family: sans-serif;
+    /* background-color: rgb(220, 234, 236); */
+    background-color: rgb(247, 245, 246);
+    margin-top: 50px;
+    padding: 0%;
+}
+
+
+h1, h2, p {
+    /* color: rgb(45, 57, 72); */
+    color: rgb(99, 98, 99);
+    /* text-align: center; */
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 320px;
+    padding: 15px;
+    font-size: 17px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+
+label {
+    color: rgb(45, 57, 72);
+    /* text-align: center; */
+    /* text-align: center; */
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    /* background-color: #608dbd; */
+    background-color: #c9c3c7;
+    border:none;
+    border-radius:5px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    /* background-color: #44709e; */
+    background-color: #6e6b6d;
+    
+
+}
+
+.center {
+    text-align: center;
+}
+
+/* #logo {
+    position:fixed;
+    top:0;
+    left:0;
+    max-width: 20px;
+    padding: 10px;
+    z-index: 999;
+
+} */
+
+.color-palette{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.color{
+    width:100px;
+    height:100px;
+    margin:10px
+    /* border-radius:10px; */
+}
+

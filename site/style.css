@@ -34,7 +34,7 @@ input[type="text"] {
 }
 
 
-h3 {
+label {
     color: rgb(45, 57, 72);
     /* text-align: center; */
     text-align: center;

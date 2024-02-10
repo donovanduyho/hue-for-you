@@ -2,7 +2,7 @@
     width: 60px;
     height: 60px;
     margin: 5px;
-    display: inline-block; 
+    display: inline-block;
 }
 
 body {
@@ -13,8 +13,9 @@ body {
     padding: 0%;
 }
 
-
-h1, h2, p {
+h1,
+h2,
+p {
     /* color: rgb(45, 57, 72); */
     color: rgb(99, 98, 99);
     /* text-align: center; */
@@ -31,20 +32,19 @@ input[type="text"] {
     margin: auto;
 }
 
-
 label {
     color: rgb(45, 57, 72);
     /* text-align: center; */
     /* text-align: center; */
 }
 
-button{
+button {
     padding: 10px 20px;
     font-size: 16px;
     /* background-color: #608dbd; */
     background-color: #c9c3c7;
-    border:none;
-    border-radius:5px;
+    border: none;
+    border-radius: 5px;
     height: 50px;
     cursor: pointer;
     text-align: center;
@@ -53,8 +53,6 @@ button{
 button:hover {
     /* background-color: #44709e; */
     background-color: #6e6b6d;
-    
-
 }
 
 .center {
@@ -71,16 +69,15 @@ button:hover {
 
 } */
 
-.color-palette{
-    display:flex;
+.color-palette {
+    display: flex;
     justify-content: center;
     margin-top: 50px;
 }
 
-.color{
-    width:100px;
-    height:100px;
-    margin:10px
+.color {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
     /* border-radius:10px; */
 }
-

@@ -54,7 +54,7 @@ button:hover {
     position:fixed;
     top:0;
     left:0;
-    max-width: 50px;
+    max-width: 20px;
     padding: 10px;
     z-index: 999;
 }

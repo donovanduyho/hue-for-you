@@ -1,14 +1,16 @@
 
 body {
     font-family: sans-serif;
-    background-color: rgb(220, 234, 236);
+    /* background-color: rgb(220, 234, 236); */
+    background-color: rgb(191, 187, 191);
     margin-top: 50px;
     padding: 0%;
 }
 
 
 h1, h2, p {
-    color: rgb(45, 57, 72);
+    /* color: rgb(45, 57, 72); */
+    color: rgb(99, 98, 99);
     /* text-align: center; */
     text-align: center;
 }
@@ -33,7 +35,8 @@ label {
 button{
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #608dbd;
+    /* background-color: #608dbd; */
+    background-color: #8f8d8e;
     border:none;
     border-radius:5px;
     cursor: pointer;
@@ -41,7 +44,8 @@ button{
 }
 
 button:hover {
-    background-color: #44709e;
+    /* background-color: #44709e; */
+    background-color: #6e6b6d;
     
 
 }

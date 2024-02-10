@@ -19,7 +19,7 @@ h2 {
     text-align: center;
 }
 
-p {
+h3 {
     color: rgb(45, 57, 72);
     /* text-align: center; */
     margin: 14px
@@ -47,6 +47,7 @@ button{
     border:none;
     border-radius:5px;
     cursor: pointer;
+    
 
 }
 

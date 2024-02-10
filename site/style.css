@@ -33,6 +33,11 @@ input[type="text"] {
     border-radius: 5px;
 }
 
+
+label{
+    text-align: center;
+}
+
 button{
     padding: 10px 20px;
     font-size: 16px;

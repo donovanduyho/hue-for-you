@@ -1,4 +1,41 @@
-// import React, {} from 'react';
+import React from 'react';
+import InfiniteScroll from 'react-infinite-scroller';
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("Yay the page has loaded!");
+});
+
+
+
+const box = document.getElementById("input");
+box.addEventListener('input', function(event) {
+    const input = event.target.value;
+    console.log("input", input);    
+});
+
+
+function submitInput() {
+    var input = document.getElementById("input").value;
+    alert("Your entry was: " + input);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// ignore for now
+
+
 
 // function script() {
 //     const [input, setInput] = useState('');
@@ -29,22 +66,3 @@
 
 
 // export default script;
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("Yay the page has loaded!");
-});
-
-
-
-const box = document.getElementById("input");
-box.addEventListener('input', function(event) {
-    const input = event.target.value;
-    console.log("input", input);    
-});
-
-
-function submitInput() {
-    var input = document.getElementById("input").value;
-    alert("Your entry was: " + input);
-}

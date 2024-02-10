@@ -2,7 +2,7 @@ import openai
 from flask import Flask, request, jsonify, render_template
 
 # Configure your OpenAI API key
-openai.api_key = "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"
+openai.api_key = " "
 
 app = Flask(__name__)
 
@@ -28,7 +28,8 @@ def get_colors():
     print("Received word:", word)  # Log the received word
     colors = get_color_palette(word)
     print("Generated colors:", colors)  # Log the colors from OpenAI
-    return render_template('color_palette.html', colors=colors)
+    return jsonify(colors=colors)  # Return a JSON response
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=4999)   # Enable debug mode during development

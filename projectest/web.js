@@ -10,9 +10,6 @@ $(document).ready(function() {
             success: function(response) {
                 $("#colorPalette").empty(); // Clear old colors
 
-                // Split the response by newline characters to get an array of hex codes
-                const hexCodes = response.colors.split('\n');
-
                 // Assuming response holds a newline-separated string of hex codes:
                 const hexCodes = response.colors.split('\n'); 
 

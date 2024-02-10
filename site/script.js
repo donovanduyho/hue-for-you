@@ -1,6 +1,9 @@
 import React from 'react';
 import InfiniteScroll from 'react-infinite-scroller';
 
+function MyScroll() {
+
+}
 
 
 
@@ -19,7 +22,9 @@ box.addEventListener('input', function(event) {
 
 function submitInput() {
     var input = document.getElementById("input").value;
-    alert("Your entry was: " + input);
+    console.log("Your entry was: " + input);
+    // alert("Your entry was: " + input);
+
 }
 
 

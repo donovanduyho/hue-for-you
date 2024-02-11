@@ -17,6 +17,7 @@ def get_color_palette(word):
     )
 
     color_description = response.choices[0].message.content
+    
     hex_codes = []
     for line in color_description.splitlines():
         if line.startswith('#'):
@@ -28,9 +29,9 @@ def get_color_palette(word):
 @app.route('/get_colors', methods=['POST'])
 def get_colors():
     word = request.json['word']
-    print("Received word:", word)  
+    print("Received word:", word)  # Log the received word
     colors = get_color_palette(word)
-    print("Generated colors:", colors) 
+    print("Generated colors:", colors)  # Log the colors from OpenAI
     return jsonify({'colors': colors})
 
 if __name__ == '__main__':

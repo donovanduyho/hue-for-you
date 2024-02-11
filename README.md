@@ -23,11 +23,10 @@ source venv/bin/activate
 Install dependencies:
 pip install openai flask-cors requests flask
 Environment Variables
-Create a .env file in the root directory of your project and add the following line, replacing with your actual key:
+Create a .env file in the root directory of your project and add the following line, replacing with your actual key: OPENAI_API_KEY=your_openai_api_key
+Important: Never commit your .env file to version control to protect your API key. 
+Add .env to your .gitignore file.
 
-OPENAI_API_KEY=your_openai_api_key
-Important: Never commit your .env file to version control to protect your API key. Add .env to your .gitignore file.
-
-Usage
+Usage:
 Run color_generator after adding an api key for gpt-3.5 turbo, then run the web.html.
 

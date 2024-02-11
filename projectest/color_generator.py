@@ -29,9 +29,9 @@ def get_color_palette(word):
 @app.route('/get_colors', methods=['POST'])
 def get_colors():
     word = request.json['word']
-    print("Received word:", word)  # Log the received word
+    print("Received word:", word)  
     colors = get_color_palette(word)
-    print("Generated colors:", colors)  # Log the colors from OpenAI
+    print("Generated colors:", colors) 
     return jsonify({'colors': colors})
 
 if __name__ == '__main__':

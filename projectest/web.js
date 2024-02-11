@@ -11,13 +11,16 @@ $(document).ready(function() {
                 $("#colorPalette").empty(); // Clear old colors
 
                 // Split the response by newline characters to get an array of hex codes
-                const hexCodes = response.colors.split('\n');
+                const hexCodes = response.colors.split('\n'); 
                 // Assuming response holds a newline-separated string of hex codes:
 
                 hexCodes.forEach(hexCode => { 
+                    const colorContainer = $('<div class="color-container"></div>');
                     const colorBox = $('<div class="color-box"></div>'); 
                     colorBox.css('background-color', hexCode); 
-                    $("#colorPalette").append(colorBox);  
+                    const hexVal = $('<div class="hex-val">'+hexCode+'</div>'); 
+                    colorContainer.append(colorBox).append(hexVal);
+                    $("#colorPalette").append(colorContainer);  
                 }); 
             },
             error: function(error) { 

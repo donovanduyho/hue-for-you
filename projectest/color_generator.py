@@ -3,7 +3,7 @@ from flask_cors import CORS
 from flask import Flask, request, jsonify
 
 # Configure your OpenAI API key
-openai.api_key = ""
+openai.api_key = "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"
 
 app = Flask(__name__)
 CORS(app)
@@ -17,7 +17,6 @@ def get_color_palette(word):
     )
 
     color_description = response.choices[0].message.content
-    print("hello")
     hex_codes = []
     for line in color_description.splitlines():
         if line.startswith('#'):
@@ -36,4 +35,3 @@ def get_colors():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5005) 
-#

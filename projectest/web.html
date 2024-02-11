@@ -7,9 +7,11 @@
     <link rel= "stylesheet" href="style.css">
 </head>
 <body>
+    <img src="transparent.png" alt="logo" class="resized" >
+
     <h1>Hue For You </h1>
     <h2> The best website to find colors that match your entries</h2>
-    <p>Please enter a word that you would like to generate into a color </p>
+    <p>Enter a word or short phrase to generate a color palette </p>
     <label for="input">   </label>
     <style>
         .color-box {
@@ -26,11 +28,22 @@
 </head>
 <body>
     <div class ="center">
-        <input type="text" id="wordInput" placeholder="Type here ">
-        <button id="generateButton">Generate Palette</button>
+        <input type="text" id="wordInput" placeholder="Ex: Sunset">
+        <button id="generateButton">Generate</button>
         <div id="colorPalette"></div>
         <div id="errorMessage"></div>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
         <script src="web.js"></script> 
+        <script>
+            var input = document.getElementById("wordInput");
+            var button = document.getElementById("generateButton");
+            input.addEventListener("keypress", function(event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    button.click();
+                }
+            });
+        </script>
+
     </div>
 
 </body>

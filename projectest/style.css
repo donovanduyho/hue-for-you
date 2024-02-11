@@ -4,6 +4,17 @@
     margin: 5px;
     display: inline-block; 
 }
+
+.color-container {
+    margin: 5px;
+    display: inline-block; 
+}
+
+.hex-val {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 11px;
+}
 .resized {
     display: block;
     margin-left: auto;

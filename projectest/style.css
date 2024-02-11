@@ -3,6 +3,7 @@
     height: 60px;
     margin: 5px;
     display: inline-block; 
+    border-radius: 10px;
 }
 
 .color-container {

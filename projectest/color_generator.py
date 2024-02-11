@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 def get_color_palette(word):
-    prompt = f"""Suggest a color palette of (ONLY) 4 hex color codes (ONLY THE CODES DO NOT GIVE ME THE NAME OF THE COLOR), also make the output new lines and that would best represent the word "{word}"."""
+    prompt = f"""Suggest a color palette of (ONLY) 4 hex color codes (ONLY THE CODES DO NOT GIVE ME THE NAME OF THE COLOR), also make the output on each new lines and that would best represent the word "{word}"."""
 
     response = openai.chat.completions.create(
         model="gpt-3.5-turbo",
